@@ -365,7 +365,7 @@ Keyboard.prototype.stop = function() {
 Keyboard.prototype.pressKey = function(keyCode, event) {
   if (this._paused) { return; }
   if (!this._locale) { throw new Error('Locale not set'); }
-
+console.log('pressKey')
   this._locale.pressKey(keyCode);
   this._applyBindings(event);
 };
@@ -454,7 +454,7 @@ Keyboard.prototype._applyBindings = function(event) {
   var pressedKeys    = this._locale.pressedKeys.slice(0);
   var listenerGroups = this._getGroupedListeners();
 
-
+  console.log('apply bindings ___', event)
   for (var i = 0; i < listenerGroups.length; i += 1) {
     var listeners = listenerGroups[i];
     var keyCombo  = listeners[0].keyCombo;
@@ -630,7 +630,7 @@ Locale.prototype.releaseKey = function(keyCode) {
   else {
     var keyNames         = this.getKeyNames(keyCode);
     var killKeyCodeIndex = this._killKeyCodes.indexOf(keyCode);
-    
+
     if (killKeyCodeIndex > -1) {
       this.pressedKeys.length = 0;
     } else {
@@ -795,7 +795,7 @@ module.exports = function(locale, platform, userAgent) {
   locale.bindMacro('shift + !,', ['openanglebracket', '<']);
   locale.bindMacro('shift + .', ['closeanglebracket', '>']);
   locale.bindMacro('shift + /', ['questionmark', '?']);
-  
+
   if (platform.match('Mac')) {
     locale.bindMacro('command', ['mod', 'modifier']);
   } else {

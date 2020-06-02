@@ -1,7 +1,7 @@
 {
-  "name": "keyboardjs",
-  "description": "A library for binding to keys and key combos without the pain of key codes and key combo conflicts.",
-  "version": "2.5.0",
+  "name": "@sladwig/keyboardjs",
+  "description": "Fork of the keyboard.js library - with habdling of internationalisation.",
+  "version": "2.6.1",
   "main": "index.js",
   "scripts": {
     "test": "mocha test/**/*.spec.js",
@@ -11,18 +11,30 @@
     "Key Binding, Keyboard, Key combos, Keyboard Shortcuts"
   ],
   "author": "Robert Hurst <robertwhurst@gmail.com>",
+  "contributors": [
+    {
+      "name": "Stefan Ladwig",
+      "email": "koenig.s@gmail.com"
+    }
+  ],
   "bugs": {
-    "url": "https://github.com/RobertWHurst/KeyboardJS/issues"
+    "url": "https://github.com/sladwig/KeyboardJS/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:RobertWHurst/KeyboardJS.git"
+    "url": "git+ssh://git@github.com/sladwig/KeyboardJS.git"
   },
+  "typings": "index.d.ts",
   "license": "MIT",
   "devDependencies": {
     "browserify": "^6.0.2",
     "mocha": "^2.2.5",
     "sinon": "^1.15.3",
     "uglifyify": "^2.5.0"
+  },
+  "homepage": "https://github.com/RobertWHurst/KeyboardJS#readme",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
   }
 }

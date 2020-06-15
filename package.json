@@ -1,6 +1,6 @@
 {
   "name": "@sladwig/keyboardjs",
-  "description": "Fork of the keyboard.js library - with habdling of internationalisation.",
+  "description": "Fork of the keyboard.js library - with handling of internationalisation.",
   "version": "2.6.1",
   "main": "index.js",
   "scripts": {
@@ -32,7 +32,7 @@
     "sinon": "^1.15.3",
     "uglifyify": "^2.5.0"
   },
-  "homepage": "https://github.com/RobertWHurst/KeyboardJS#readme",
+  "homepage": "https://github.com/sladwig/KeyboardJS#readme",
   "directories": {
     "lib": "lib",
     "test": "test"

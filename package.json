@@ -1,5 +1,5 @@
 {
-  "name": "@sladwig/keyboardjs",
+  "name": "@protoio-labs/keyboardjs",
   "description": "Fork of the keyboard.js library - with handling of internationalisation.",
   "version": "2.6.1",
   "main": "index.js",
